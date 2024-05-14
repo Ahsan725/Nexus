@@ -1,5 +1,7 @@
-import LandingPage from "./views/LandingPage.jsx";
+import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./views/LandingPage.jsx";
+import GalleryViewPage from './views/GalleryViewPage.jsx';
 import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -12,13 +14,11 @@ function App() {
 
           <div>
             <Routes>
-              <Route path="/" element={< LandingPage />}></Route>
+              <Route path="/" element={<LandingPage />}></Route>
               {/* <Route path="/about">
 
-              </Route>
-              <Route path="/gallary">
-
               </Route> */}
+              <Route path="/gallary" element={<GalleryViewPage />}></Route>
             </Routes>
           </div>
 
