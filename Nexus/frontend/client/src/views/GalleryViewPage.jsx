@@ -1,6 +1,9 @@
 import React from "react";
 import { Grid } from '@mui/material';
 import MultiActionAreaCard from '../components/MultiActionAreaCard'; 
+import InputBase from '@mui/material/InputBase';
+import Button from '@mui/material/IconButton';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function GalleryViewPage() {
   const hardcodedCardData = [
@@ -12,13 +15,13 @@ export default function GalleryViewPage() {
       action1: {
         label: "View",
         onClick: () => {
-          // Handle action 1 click
+
         }
       },
       action2: {
         label: "Book",
         onClick: () => {
-          // Handle action 2 click
+
         }
       }
     },
@@ -30,13 +33,13 @@ export default function GalleryViewPage() {
       action1: {
         label: "View",
         onClick: () => {
-          // Handle action 1 click
+         
         }
       },
       action2: {
         label: "Book",
         onClick: () => {
-          // Handle action 2 click
+
         }
       }
     },
@@ -48,13 +51,13 @@ export default function GalleryViewPage() {
       action1: {
         label: "View",
         onClick: () => {
-          // Handle action 1 click
+    
         }
       },
       action2: {
         label: "Book",
         onClick: () => {
-          // Handle action 2 click
+
         }
       }
     },
@@ -66,13 +69,13 @@ export default function GalleryViewPage() {
       action1: {
         label: "View",
         onClick: () => {
-          // Handle action 1 click
+          
         }
       },
       action2: {
         label: "Book",
         onClick: () => {
-          // Handle action 2 click
+         
         }
       }
     },
@@ -84,13 +87,13 @@ export default function GalleryViewPage() {
       action1: {
         label: "View",
         onClick: () => {
-          // Handle action 1 click
+     
         }
       },
       action2: {
         label: "Book",
         onClick: () => {
-          // Handle action 2 click
+       
         }
       }
     },
@@ -98,11 +101,27 @@ export default function GalleryViewPage() {
 
   return (
     <Grid container spacing={0}>
+      <Grid item xs={12}>
+        <div className="text-center mt-8">
+          <h1 className="text-6xl font-bold text-slate-600">Available Workspaces</h1>
+          <InputBase className="w-1/2 bg-slate-100 p-4 rounded-2xl"
+        sx={{ ml: 1, flex: 1 }}
+        placeholder="Search Through the Best Workspaces"
+        inputProps={{ 'aria-label': 'search through the best workspaces' }}
+      />
+      <Button type="button" color="p" sx={{ p: '40px' }} aria-label="search">
+        <SearchIcon className=" text-blue-700 text-4xl" />
+      </Button>
+        </div>
+      </Grid>
+  
       {hardcodedCardData.map((cardInfo, index) => (
         <Grid item key={index} xs={12} sm={6} md={3}>
           <MultiActionAreaCard {...cardInfo} />
         </Grid>
       ))}
     </Grid>
-  );
+  );  
+
+
 }
