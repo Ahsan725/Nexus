@@ -10,18 +10,22 @@ function NavBar() {
                     <h1 className="text-4xl font-semibold text-white mx-10">NEXUS</h1>
                 </div>
 
-                <div className="flex justify-end items-center">
+                <div className="flex justify-end items-center text-lg">
                     <button class="cursor-pointer mx-2 transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
                         Home
                     </button>
 
                     <button class="cursor-pointer mx-2 transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
-                        Co-Working Spaces
+                        About us
                     </button>
 
-                    <button className="text-white cursor-pointer hover:bg-gray-400 p-2 rounded" aria-label="Cart">
-                        <FaShoppingCart className="h-7 w-7" />
+                    <button class="cursor-pointer mx-2 transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+                        Spaces
                     </button>
+
+                    {/* <button className="text-white cursor-pointer hover:bg-gray-400 p-2 rounded" aria-label="Cart">
+                        <FaShoppingCart className="h-7 w-7" />
+                    </button> */}
 
                     <button className="text-white cursor-pointer mx-2 hover:bg-gray-400 p-2 rounded-lg ">
                         <FaUserCircle className="h-7 w-7" />
