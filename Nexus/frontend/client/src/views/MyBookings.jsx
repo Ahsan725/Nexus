@@ -2,17 +2,17 @@ import React from 'react';
 import Footer from '../components/Footer';
 import NavBar from '../components/NavBar';
 
-function AboutPage() {
+function MyBookings() {
     return (
         <>
             <main>
                 <NavBar />
-                <div>AboutPage</div>
+                <div>MyBookings</div>
                 <Footer />
             </main>
         </>
     )
 }
 
-export default AboutPage;
+export default MyBookings;
 
