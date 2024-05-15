@@ -1,10 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./views/LandingPage.jsx";
-// import GalleryViewPage from './views/GalleryViewPage';
-import AboutPage from "./views/AboutPage.jsx";
-import NavBar from "./components/NavBar.jsx";
-import Footer from "./components/Footer.jsx";
+import GalleryViewPage from './views/GalleryViewPage';
+import MyBookings from "./views/MyBookings.jsx";
 import LoginModal from "./views/LoginModal.jsx";
 import SignUpModal from "./views/SignUpModal.jsx";
 
@@ -20,10 +18,10 @@ function App() {
               <Route path="/" element={<LandingPage />} />
 
               {/*About Us Route*/}
-              <Route path="/about" element={<AboutPage />} />
+              <Route path="/bookings" element={<MyBookings />} />
 
               {/*Spaces Route*/}
-              {/* <Route path="/spaces" element={<GalleryViewPage />} /> */}
+              <Route path="/spaces" element={<GalleryViewPage />} />
 
               {/*Login Route*/}
               <Route path="/login" element={<LoginModal />} />

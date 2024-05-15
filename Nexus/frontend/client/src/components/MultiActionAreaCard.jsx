@@ -29,12 +29,18 @@ export default function MultiActionAreaCard({ description, capacity, price, imag
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="large" color="primary" variant='contained' onClick={action1.onClick}>
-          {action1.label}
-        </Button>
-        <Button size="large" color="success" variant='contained' onClick={action2.onClick}>
-          {action2.label}
-        </Button>
+        <div className="flex justify-evenly items-center">
+          <div className="mx-8">
+            <Button size="large" color="primary" variant='contained' onClick={action1.onClick}>
+              {action1.label}
+            </Button>
+          </div>
+
+          <Button size="large" color="success" variant='contained' onClick={action2.onClick}>
+            {action2.label}
+          </Button>
+        </div>
+
       </CardActions>
     </Card>
   );
